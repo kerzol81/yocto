@@ -1,1 +1,4 @@
 bitbake-layers create-layer meta-zolee
+
+# add new layer to the build:
+nano /build/conf/bblayers.conf
