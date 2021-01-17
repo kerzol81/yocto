@@ -18,3 +18,5 @@ IMAGE_INSTALL_append += " nano"  # white space! Append means literal
 IMAGE_FEATURES += "ssh-server-dropbear"
 
 devtool edit-recipe nano
+
+devtool add --help
