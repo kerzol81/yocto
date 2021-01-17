@@ -10,3 +10,7 @@ bitbake example
 IMAGE_INSTALL += "nano"
 
 IMAGE_INSTALL_append += " nano"  # white space! Append means literal
+
+# pre setup settings, and packages 
+
+IMAGE_FEATURES += "ssh-server-dropbear"
