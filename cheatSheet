@@ -5,3 +5,8 @@ nano /build/conf/bblayers.conf
 
 # test:
 bitbake example
+
+#
+IMAGE_INSTALL += "nano"
+
+IMAGE_INSTALL_append += " nano"  # white space! Append means literal
