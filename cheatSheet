@@ -20,3 +20,5 @@ IMAGE_FEATURES += "ssh-server-dropbear"
 # devtool
 devtool edit-recipe nano
 devtool add --help
+
+RDEPENDS - run time dependency
