@@ -24,4 +24,4 @@ devtool add --help
 RDEPENDS - run time dependency
 
 # deploy
-devtool deploy target -s -c root@IP
+devtool deploy target -s -c hello root@IP
