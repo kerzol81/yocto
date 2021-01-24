@@ -25,3 +25,6 @@ RDEPENDS - run time dependency
 
 # deploy
 devtool deploy target -s -c hello root@IP
+
+# mod
+devtool build hello && devtool deploy target -s -c hello root@IP 
