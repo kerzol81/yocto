@@ -28,3 +28,12 @@ devtool deploy target -s -c hello root@IP
 
 # mod
 devtool build hello && devtool deploy target -s -c hello root@IP 
+
+# switch kernel:
+1. bitbake virtual/kernel && bitbake virtual/kernel -e | grep ^T=
+2. Add two lines to conf/local.conf:
+
+       PREFERRED_PROVIDER_virtual/kernel = "linux-XXXX"
+       PREFERRED_VERSION_linux-fslc = "X.YY"
+3. bitbake virtual/kernel -c cleansstate
+4. Check: bitbake virtual/kernel -e | grep ^T=
